@@ -36,8 +36,11 @@ function exchange(e){
             }
         });
         resultArea.innerText = exchangeValue.toFixed(2);
+    }else{
+        resultArea.innerText = 0;
     }   
 }
+
 function getCurrencyList(){
     const urlAddress = 'https://api.nbp.pl/api/exchangerates/tables/a/?format=json/';
     document.querySelector('.loader').classList.remove('invisible');
